@@ -32,7 +32,7 @@ SSTI_TEST_PAYLOADS = {
 
 class Jinja2SSTIExploit:
     def __init__(self, url):
-        self.url = url.rstrip("/") + "/"
+        self.url = url.rstrip("/")
         self.session = requests.Session()
 
     # ---------- AUTH ----------
